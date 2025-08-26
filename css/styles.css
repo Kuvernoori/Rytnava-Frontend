@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Eater&effect=fire-animation');
+
 .img-stickman {
     max-width: 100%;
     height: auto;
@@ -12,19 +15,56 @@
     padding: 10px 400px;
     text-align: right;
 }
-.text-block{
-    max-width: 50%;
+
+.text-image-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 1300px;
+    margin: 150px auto;
+    gap: 40px;
+    flex-wrap: wrap;
     font-family: arial, sans-serif;
-    font-size: 18px;
+    font-weight: bold;
 }
-.img-right{
-    max-width: 300px;
-    height: auto;
-    border-radius:10px;
-    display: block;
-    margin-left: auto;
-    box-shadow: 0 0 0 10px rgba(186,0,16,0.8);
+
+.text-content {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+    font-family: arial, sans-serif;
 }
+
+.text-content h2 {
+    font-size: 70px;
+    margin-bottom: 1px;
+    line-height: 1;
+}
+
+.text-content h4 {
+    font-size: 24px;
+    margin-bottom: 1px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #333;
+    letter-spacing: -1px;
+    text-shadow: 0 0 1px rgba(0,0,0,0.10);
+}
+
+.text-image-block img {
+    flex: 1;
+    margin-top: 80px;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 12px;
+}
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #id-title{
     text-align: center;
 }
@@ -46,6 +86,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+
 }
 .top-bar-center{
     display: flex;
@@ -75,14 +117,25 @@
     color: #ffffff;
     padding: 5px 12px;
     border-radius: 5px;
-    font-weight: bold;
 }
 .register-btn:hover{
     background: #006efd;
 }
+
+.login-btn{
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
 html , body {
     margin: 0;
     padding: 0;
+}
+
+.text-middle{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
 }
 
 .footer-column{
