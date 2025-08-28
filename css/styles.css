@@ -101,32 +101,52 @@
    display:flex
 }
 
-.top-bar a{
+.top-bar a:not(.login-btn):not(.register-btn) {
     color: #000000;
     text-decoration: none;
     margin-right: 15px;
-    transition: color 0.3s;
+    border: 6px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 
 }
-
-.top-bar a:hover{
-    color: #ffffff;
+.top-bar a:not(.register-btn):not(.login-btn):hover {
+    background: #e3e3e3;
+    border-color: #e3e3e3;
 }
-.top-bar .register-btn{
-    background: #0081fd;
+.login-btn{
+    padding: 3px 3px;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 30px;
+    border: 6px solid transparent;
+    border-radius: 8px;
+    display: inline-block;
+    line-height: normal; /* убери 2.5 */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover{
+    background: #e3e3e3;
+    border-color: #e3e3e3;
+}
+.register-btn{
+    background: #006efd;
     color: #ffffff;
-    padding: 5px 12px;
-    border-radius: 5px;
+    padding: 3px 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: 15px;
+    border: 6px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 .register-btn:hover{
-    background: #006efd;
+    background: #3c589f;
 }
 
-.login-btn{
-    color: #ffffff;
-    padding: 5px 12px;
-    border-radius: 5px;
-}
 html , body {
     margin: 0;
     padding: 0;
@@ -166,6 +186,8 @@ html , body {
 }
 .footer-column h4 {
     margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
 .footer-column ul{
     list-style: none;
@@ -174,7 +196,8 @@ html , body {
 .footer-column ul li a {
     color: #000000;
     text-decoration: none;
-    font-size: 14px;
+    line-height: 1.6;
+    font-size: 18px;
 }
 .footer-column ul li a:hover {
     color: #000000;
@@ -183,6 +206,6 @@ html , body {
     text-align: center;
     margin-top: 30px;
     font-size: 14px;
-    font-family: "Century Gothic", sans-serif;;
+    font-family: "Montserrat", sans-serif;
     color: #777;
 }
