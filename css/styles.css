@@ -151,7 +151,65 @@ html , body {
     margin: 0;
     padding: 0;
 }
+.frames-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.frame-right{
+    display: flex;
+    width: 590px;
+    height: 500px;
+    border: 1px  rgba(0, 110, 253, 0.26);
+    background-color: rgba(0, 110, 253, 0.1);
+    border-radius: 10px;
+}
+.frame-left{
+    width: 590px;
+    height: 559px;
+    border: 1px rgba(255, 0, 0, 0.07);
+    background-color: rgba(255, 0, 0, 0.07);
+    border-radius: 10px;
+}
+.straight-text{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+.mini-text-frame{
+    border: 5px rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-weight: bold;
+    color: #878787;
+    font-size: 14px;
 
+}
+.image-frame img{
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: 2px;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-frame{
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    margin-left: 40px;
+    font-family: arial, sans-serif;
+}
+.h2-frame{
+    margin-left: 20px;
+    padding: 1px;
+    margin-bottom: 50px;
+    display: block;
+    font-family: arial, sans-serif;
+
+}
 .text-middle{
     text-align: center;
     font-family: "Montserrat", sans-serif;
